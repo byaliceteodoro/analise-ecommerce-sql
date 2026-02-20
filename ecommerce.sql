@@ -1,24 +1,30 @@
-# 📊 Análise E-commerce com SQL
+-- 1. Apagar tabelas se existirem
+DROP TABLE IF EXISTS itens_pedido;
+DROP TABLE IF EXISTS pedidos;
+DROP TABLE IF EXISTS produtos;
+DROP TABLE IF EXISTS clientes;
 
-**Projeto completo de loja online**
+-- 2. Criar tabelas
+CREATE TABLE clientes (...);
+CREATE TABLE produtos (...);
+CREATE TABLE pedidos  (...);
+CREATE TABLE itens_pedido (...);
 
-## 🏗️ Banco de dados
-4 tabelas relacionais com dados realistas de vendas.
+-- 3. Inserir dados
+INSERT INTO clientes ...;
+INSERT INTO produtos ...;
+INSERT INTO pedidos  ...;
+INSERT INTO itens_pedido ...;
 
-## 📈 Análises executadas
+-- 4. Análises (consultas)
+-- Faturamento total
+SELECT ...;
 
-**Faturamento por categoria:**
-![Faturamento categoria](faturamento_categoria.png)
+-- Ticket médio
+SELECT ...;
 
-**Ticket médio:**
-![Ticket médio](ticket_medio.png)
+-- Faturamento por categoria
+SELECT ...;
 
-**Cliente VIP:**
-![Cliente VIP](cliente_vip.png)
-
-## Como usar
-1. [SQLiteOnline](https://sqliteonline.com)
-2. Cole `ecommerce.sql`
-3. Execute e analise!
-
-**Skills**: `JOIN`, `GROUP BY`, `SUM`, `COUNT`, `HAVING`
+-- Cliente que mais gastou
+SELECT ...;
